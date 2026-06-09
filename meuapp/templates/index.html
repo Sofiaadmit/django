@@ -8,6 +8,15 @@
 <body>
     <h1>Ola, Django</h1>
     <a href="{% url 'sobre' %}">Indo para Sobre</a>
+    <br>
     <a href="{% url 'contato' %}">Indo para Contato</a>
+    <br>
+    <a href="{% url 'aluno' id_aluno=1 %}">Indo para Sofia</a>
+     
+    {% if nome %}
+        <p> Ola, {{nome}}</p>
+        {% else %}
+        <p> Ola, visitante</p>
+        {% endif %}
 </body>
 </html>

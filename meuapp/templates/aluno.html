@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina aluno</title>
+</head>
+<body>
+    <h1>Pagina do Aluno</h1>
+    <p>ID recebido pela url: {{ id_aluno }}</p>
+    <a href="{% url 'index' %}"> ir para a pagina inicial</a>
+    <a href="{% url 'sobre' %}"> ir para a pagina sobre</a>
+</body>
+</html>
